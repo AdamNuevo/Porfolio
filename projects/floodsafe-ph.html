@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FloodSafe PH — Flood Early Warning & Civic Alert Platform | Adam Nuevo</title>
+  <meta name="description" content="Community flood monitoring, sensor telemetry, and emergency evacuation mapping platform designed for Philippine flood-prone communities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/styles.css">
+  <link rel="stylesheet" href="../src/css/project-detail.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <span class="status-dot"></span>
+        Adam Nuevo
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+        <a href="../index.html#projects" class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.825rem;">← All Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container project-detail-header">
+    <a href="../index.html#projects" class="back-link">
+      <span>←</span> Back to Selected Work
+    </a>
+
+    <div class="detail-header-top">
+      <span class="detail-project-number">04</span>
+      <span class="status-badge status-dev">In Development (2026)</span>
+    </div>
+
+    <h1 class="detail-title">FLOODSAFE PH</h1>
+    <p class="detail-tagline">Civic technology initiative for real-time water level sensor tracking, flood hazard zone mapping, and SMS/push evacuation alerts for flood-prone Philippine communities.</p>
+
+    <!-- Metadata Grid -->
+    <div class="detail-meta-grid">
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Timeline</span>
+        <span class="detail-meta-val">2026 · Current Project</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Category</span>
+        <span class="detail-meta-val">Civic Tech / Web Application</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">My Role</span>
+        <span class="detail-meta-val">Lead Developer</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Primary Stack</span>
+        <span class="detail-meta-val">React · Leaflet · Firebase · REST API</span>
+      </div>
+    </div>
+
+    <!-- Main Visual Mockup Showcase -->
+    <div class="detail-hero-visual">
+      <div class="detail-hero-mockup">
+        <div class="mockup-window-bar">
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-url">floodsafe.ph/map/marikina-river-basin</span>
+        </div>
+        <div class="detail-mockup-inner" style="background: linear-gradient(135deg, rgba(30,64,175,0.06), rgba(0,0,0,0.02));">
+          <div style="max-width: 620px; margin: 0 auto; text-align: center;">
+            <div style="display: inline-block; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); background: var(--bg-surface); padding: 0.3rem 0.8rem; border-radius: 4px; border: 1px solid var(--border-subtle); margin-bottom: 1rem;">
+              Hydrological Sensor Telemetry & Evacuation Routing
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Interactive Hazard Maps & Multi-Tiered Alert Thresholds</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Combines river sensor data with open-source street maps to give vulnerable residents actionable warning times ahead of flash floods.
+            </p>
+            <div class="tech-tags" style="justify-content: center;">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Leaflet / OpenStreetMap</span>
+              <span class="tech-tag">Firebase Realtime DB</span>
+              <span class="tech-tag">PAGASA Weather API</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structured Technical Narrative -->
+    <div class="detail-content">
+      
+      <!-- ABOUT -->
+      <section class="content-block">
+        <h2 class="block-title">01 / About</h2>
+        <div class="block-body">
+          <p>
+            <strong>FloodSafe PH</strong> is an ongoing civic technology project focused on disaster risk reduction in low-lying Philippine urban centers and river basins. It integrates live sensor telemetry with community-accessible maps to deliver rapid flood warnings.
+          </p>
+        </div>
+      </section>
+
+      <!-- THE PROBLEM -->
+      <section class="content-block">
+        <h2 class="block-title">02 / The Problem</h2>
+        <div class="block-body">
+          <p>
+            During typhoons and monsoon seasons, water levels in urban waterways can rise rapidly within minutes:
+          </p>
+          <ul>
+            <li><strong>Fragmented information:</strong> Residents must check disparate social media posts and manual siren broadcasts to know current river levels.</li>
+            <li><strong>Delayed evacuation decisions:</strong> Without visible trendlines (e.g. rising at 0.5m / 15 mins), families hesitate until roads are already submerged.</li>
+            <li><strong>Unknown safe paths:</strong> Evacuees frequently attempt routes that pass through known choke points and impassable flooding.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- THE SOLUTION -->
+      <section class="content-block">
+        <h2 class="block-title">03 / The Solution</h2>
+        <div class="block-body">
+          <p>
+            FloodSafe PH provides a single, mobile-optimized dashboard designed to function cleanly under degraded network conditions:
+          </p>
+          <ul>
+            <li><strong>Live Sensor Telemetry:</strong> Real-time gauge levels classified under 3 alarm tiers (Alert, Warning, Evacuation).</li>
+            <li><strong>Lightweight Geospatial Mapping:</strong> Interactive map rendering evacuation centers, high-ground shelters, and flooded street pins.</li>
+            <li><strong>Trend Forecasting:</strong> Visual sparklines showing 1-hour and 3-hour water velocity trajectories.</li>
+            <li><strong>SMS & Push Notification Hub:</strong> Automated alerts sent when upstream sensors cross warning thresholds.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MY ROLE -->
+      <section class="content-block">
+        <h2 class="block-title">04 / My Role</h2>
+        <div class="block-body">
+          <p>
+            As the <strong>Lead Developer</strong>:
+          </p>
+          <ul>
+            <li>Building the geospatial interface using React and Leaflet/OpenStreetMap.</li>
+            <li>Designing the real-time telemetry pipeline connecting mock IoT sensor nodes to Firebase Realtime Database.</li>
+            <li>Optimizing page weight and asset caching to ensure rapid load times on 3G mobile connections during emergencies.</li>
+            <li>Structuring community hazard reporting endpoints.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY -->
+      <section class="content-block">
+        <h2 class="block-title">05 / Technology</h2>
+        <div class="block-body">
+          <div class="skills-matrix" style="grid-template-columns: 1fr 1fr;">
+            <div>
+              <span class="skill-category-title">Frontend & Maps</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> React (Vite)</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Leaflet.js & OpenStreetMap</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Tailwind CSS</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Service Workers (PWA)</li>
+              </ul>
+            </div>
+            <div>
+              <span class="skill-category-title">Backend & Data</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> Firebase Realtime Database</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Node.js / Express API</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Open-Meteo & Weather APIs</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Twilio / SMS Gateway</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGES -->
+      <section class="content-block">
+        <h2 class="block-title">06 / Challenges</h2>
+        <div class="block-body">
+          <div class="challenges-grid">
+            <div class="challenge-card">
+              <h4 class="challenge-title">1. Resilient Offline Map Caching</h4>
+              <p class="challenge-text">
+                Mobile connectivity often drops during extreme weather events. Implementing Service Worker tile caching for the user's localized 5km radius ensures maps remain readable even when cell towers lose power.
+              </p>
+            </div>
+            <div class="challenge-card">
+              <h4 class="challenge-title">2. Sensor Data Smoothing & Anomaly Rejection</h4>
+              <p class="challenge-text">
+                Ultrasonic water sensors can report transient spikes due to floating debris or wave chop. Implemented a rolling moving average filter to reject false threshold triggers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT I LEARNED -->
+      <section class="content-block">
+        <h2 class="block-title">07 / What I Learned</h2>
+        <div class="block-body">
+          <p>
+            Developing FloodSafe PH showed me the direct social impact of software engineering. I gained practical knowledge in geospatial visualization, PWA caching strategies, and designing resilient systems for real-world constraints.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Action Bar -->
+    <div class="detail-action-bar">
+      <a href="https://github.com/Blanknetework" target="_blank" class="btn btn-primary">View on GitHub ↗</a>
+      <button id="shareProjectBtn" class="btn btn-secondary">Copy Project Link</button>
+      <a href="../index.html#contact" class="btn btn-secondary">Discuss This Project</a>
+    </div>
+
+    <!-- Pagination -->
+    <div class="project-nav-pagination">
+      <a href="zentaku.html" class="nav-pag-item prev">
+        <span class="nav-pag-label">← Previous Project</span>
+        <span class="nav-pag-title">Zentaku Housing Platform</span>
+      </a>
+      <a href="quest-planner.html" class="nav-pag-item next">
+        <span class="nav-pag-label">Next Project →</span>
+        <span class="nav-pag-title">Quest Planner App</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Adam Nuevo</div>
+        <div class="footer-copy">4th Year BSIT Student · Quezon City, Philippines</div>
+      </div>
+      <div class="social-links-row">
+        <a href="https://github.com/Blanknetework" target="_blank" class="social-link">GitHub</a>
+        <a href="https://linkedin.com/in/adamnuevo73" target="_blank" class="social-link">LinkedIn</a>
+        <a href="mailto:adamnuevo28@gmail.com" class="social-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/project.js"></script>
+</body>
+</html>

@@ -1,324 +1,876 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="/src/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Nuevo — Web & Software Developer | 4th Year BSIT</title>
+  <meta name="description" content="Personal portfolio of Adam Nuevo, a 4th Year BSIT student and web/software developer from Quezon City, Philippines. Building real projects, systems, and applications.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
 
-    <div class="loading">
-        <div class="loading-content">
-            <div class="loading-spinner"></div>
-            <h2>Welcome</h2>
-        </div>
-    </div>
+  <!-- Minimal Sticky Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-brand">
+        <span class="status-dot" title="Available for OJT / Internship"></span>
+        ADAM NUEVO
+      </a>
 
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#now" class="nav-link">Now</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="assets/cv/Adam_Nuevo_OJT_CV.pdf.pdf" download class="nav-link nav-link-cv">CV ↓</a></li>
+        </ul>
+      </nav>
 
-    <div class="container">
-        <nav>
-            <div class="logo">Adam R. Nuevo</div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-        <!-- Home Section -->
-        <main class="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm Adam R. Nuevo</h1>
-                <p>I'm a web developer focused on creating responsive, user-friendly websites with clean designs and outstanding performance.</p>
-                <div class="cta-buttons">
-                    <a href="#project" class="btn btn-primary">View Projects</a>
-                    <a href="mailto:adamnuevo28@gmail.com" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-overlay"></div>
-                <img src="assets/images/me.png" alt="Portfolio Image">
-            </div>
-
-        </main>
-
-
-        <!-- About Section -->
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                
-                <div class="about-grid">
-                    <!-- Who I am -->
-                    <div class="about-card">
-                        <h3>Who I am?</h3>
-                        <div class="card-content">
-                            <p>I'm Adam R. Nuevo, from the Philippines. I'm currently a 3rd year college student at Quezon City University.</p>
-                        </div>
-                    </div>
-        
-                    <!-- What I do -->
-                    <div class="about-card">
-                        <h3>What I do?</h3>
-                        <div class="card-content">
-                            <p>I develop responsive websites, create user-friendly interfaces, and build robust web applications. My focus is on delivering clean, efficient, and maintainable code.</p>
-                        </div>
-                    </div>
-        
-                    <!-- Tech Stack -->
-                    <div class="about-card">
-                        <h3>Tech Stack</h3>
-                        <div class="tech-stack">
-                            <div class="tech-item">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-js"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-php"></i>
-                                <span>PHP</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-java"></i>
-                                <span>Java</span>
-                            </div>
-                            <div class="tech-item">
-                                <i class="fab fa-mysql"></i>
-                                <span>MySQL</span>
-                            </div>
-
-                            <div class="tech-item">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!--- Project Section -->
-    <section class="projects" id="project">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            
-            <div class="projects-grid">
-                <!-- Project Card 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/Screenshot 2024-12-27 034929.png" alt="Project 1">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Tamakiqt/QCU-MERCHMART.git" class="live-demo">Live Demo</a>
-                                <a href="https://github.com/Tamakiqt/QCU-MERCHMART" class="source-code">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>QCU MERCHMART</h3>
-                        <p>A E-ECOMMERECE COOPERATIVE WEBSITE USING PHP, JAVASCRIPT, MYSQL</p>
-                        <div class="project-tech">
-                            <span>PHP</span>
-                            <span>JAVASCRIPT</span>
-                            <span>MYSQL</span>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Project Card 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/Screenshot 2024-12-27 035042.png" alt="Project 2">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Tamakiqt/QCU-MERCHMART.git" class="live-demo">Live Demo</a>
-                                <a href="https://github.com/Tamakiqt/QCU-MERCHMART/tree/master/admin-dashboard" class="source-code">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>ADMIN DASHBOARD</h3>
-                        <p>ADMIN DASHBOARD FOR QCU MERCHMART USING PHP, JAVASCRIPT, MYSQL</p>
-                        <div class="project-tech">
-                            <span>PHP</span>
-                            <span>JAVASCRIPT</span>
-                            <span>MYSQL</span>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Project Card 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/Screenshot 2024-12-27 035328.png" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Blanknetework/FlappyBIrd" class="source-code">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>FlappyBird</h3>
-                        <p>A FLAPPY BIRD GAME USING A JAVA</p>
-                        <div class="project-tech">
-                            <span>JAVA</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/Screenshot 2024-12-27 035456.png" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href=  https://tamakiqt.github.io/BrewHaven/" class="live-demo">Live Demo</a>
-                                <a href="https://github.com/Tamakiqt/BrewHaven" class="source-code">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>BrewHaven</h3>
-                        <p>A E-COMMERCE COFFEE WEBSITE USING HTML, CSS, JAVASCRIPT</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JAVASCRIPT</span>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Project Card 5 -->
-                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/received_459987253046702.jpeg" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Tamakiqt/POS-HAVENNN" class="source-code">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>BrewHaven</h3>
-                        <p>A POS - SYSTEM COFFEE USING JAVA</p>
-                        <div class="project-tech">
-                            <span>JAVA</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 6 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/keylogger.jpg" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/Blanknetework/Keylogger" class="source-code">Source Code</a>
-                            </div>
-                        </div>
-
-               
-                    </div>
-                    <div class="project-info">
-                        <h3>Keylogger</h3>
-                        <p>A KEYLOGGER FOR EDUCATIONAL PURPOSES ONLY USING PYTHON</p>
-                        <div class="project-tech">
-                            <span>PYTHON</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Back to Top Button -->
-<button class="back-to-top" onclick="scrollToTop()">
-    <i class="fas fa-arrow-up"></i>
-</button>
-
-
-
-
-
-        <!-- Chat Button -->
-        <button id="chat-button" onclick="toggleChat()">
-            <i class="fas fa-comments"></i>
+      <div class="nav-actions">
+        <button id="cmdOpenBtn" class="cmd-shortcut-btn" title="Open Quick Navigator (or press /)">
+          <span>Press</span>
+          <kbd>/</kbd>
         </button>
 
-        <!-- Offline Chat Section -->
-        <div id="chat-container">
-            <div class="chat-header">
-                <span>Chat with Adam</span>
-                <button id="close-chat" onclick="toggleChat()">X</button>
-            </div>
-            <ul id="messages"></ul>
-            <div class="suggested-questions">
-                <button onclick="sendSuggestedQuestion('What is your name?')">What is your name?</button>
-                <button onclick="sendSuggestedQuestion('What services do you offer?')">What services do you offer?</button>
-                <button onclick="sendSuggestedQuestion('How can I contact you?')">How can I contact you?</button>
+        <button class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Theme (T)">
+          <span class="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
 
-            </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-meta-badge">
+        <span>Quezon City, Philippines</span>
+        <span>·</span>
+        <span>Quezon City University</span>
+      </div>
+
+      <h1 class="hero-title">ADAM NUEVO</h1>
+      <div class="hero-subtitle">4th Year BSIT Student · Web & Software Developer</div>
+
+      <p class="hero-statement">
+        "I build websites, applications, and systems while learning through real projects."
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+        <a href="assets/cv/Adam_Nuevo_OJT_CV.pdf.pdf" download class="btn btn-secondary">Download CV ↓</a>
+        <a href="https://github.com/Blanknetework" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Profile ↗</a>
+        <button class="btn btn-secondary copy-email-btn">Copy Email</button>
+      </div>
+
+      <div class="hero-footer-meta">
+        <div class="meta-item">
+          <span class="status-dot"></span>
+          <span>Currently looking for OJT / Internship Opportunities</span>
         </div>
+        <div class="meta-item">
+          <span>Focus: Full-Stack Web, Modern Frontend & Backend Systems</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Selected Work Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured & Selected Work</span>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-subtitle">
+          A collection of projects I've built while learning, experimenting, and solving problems.
+        </p>
+      </div>
 
+      <!-- Project Category Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="web">WEB</button>
+        <button class="filter-btn" data-filter="mobile">MOBILE</button>
+        <button class="filter-btn" data-filter="academic">ACADEMIC</button>
+        <button class="filter-btn" data-filter="personal">PERSONAL</button>
+        <button class="filter-btn" data-filter="experiments">EXPERIMENTS</button>
+      </div>
 
+      <!-- Projects List -->
+      <div class="projects-list">
 
-
-
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Adam R. Nuevo</h3>
-                    <p>Web Developer</p>
+        <!-- 01: SMARTBARANGAY (Primary Featured) -->
+        <a href="projects/smartbarangay.html" class="project-item" data-category="web academic">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="project-number">01</span>
+                <span class="status-badge status-completed">Completed</span>
+              </div>
+              <h3 class="project-name">SMARTBARANGAY</h3>
+              <p class="project-desc">
+                Integrated Barangay Management and Service Information System for digital resident registration, automated clearance issuance, and peace-and-order blotter management.
+              </p>
+              <div class="project-meta-row">
+                <span class="project-meta-pill">2026</span>
+                <span>·</span>
+                <span class="project-meta-pill">Academic / Subject Project</span>
+                <span>·</span>
+                <span class="project-meta-pill">Lead Developer</span>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">PDF & QR Engine</span>
+              </div>
+            </div>
+            <div class="project-link-action">
+              <span>View Case Study</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="mockup-preview-frame">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title">smartbarangay.app · Barangay Registry</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-accent-bar"></div>
+                <div class="mockup-code-line w-80"></div>
+                <div class="mockup-code-line w-60"></div>
+                <div class="mockup-code-line w-40"></div>
+                <div style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.725rem; color: var(--text-muted);">
+                  [Resident Records · Automated Clearance Generator · Blotter Module]
                 </div>
+              </div>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/Blanknetework" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://facebook.com/adam.nuevo73" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://linkedin.com/in/adamnuevo73" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="mailto:adamnuevo28@gmail.com">
-                    <i class="far fa-envelope"></i>
-                </a>
+          </div>
+        </a>
+
+        <!-- 02: EXAMGUARD -->
+        <a href="projects/examguard.html" class="project-item" data-category="mobile academic">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="project-number">02</span>
+                <span class="status-badge status-completed">Completed</span>
+              </div>
+              <h3 class="project-name">EXAMGUARD</h3>
+              <p class="project-desc">
+                Mobile examination monitoring and integrity platform featuring face verification telemetry, background app switch detection, and instructor live supervision.
+              </p>
+              <div class="project-meta-row">
+                <span class="project-meta-pill">2025</span>
+                <span>·</span>
+                <span class="project-meta-pill">Mobile Application</span>
+                <span>·</span>
+                <span class="project-meta-pill">Lead Developer</span>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">Flutter / Dart</span>
+                <span class="tech-tag">WebRTC</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Socket.io</span>
+              </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2024 Adam R. Nuevo. All rights reserved.</p>
+            <div class="project-link-action">
+              <span>View Case Study</span>
+              <span>→</span>
             </div>
+          </div>
+          <div class="project-preview">
+            <div class="mockup-preview-frame">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title">ExamGuard Mobile · Live Proctoring</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-accent-bar" style="background: #059669;"></div>
+                <div class="mockup-code-line w-80"></div>
+                <div class="mockup-code-line w-60"></div>
+                <div style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.725rem; color: var(--text-muted);">
+                  [Mobile Proctoring App · Camera Integrity · App Lock Telemetry]
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 03: ZENTAKU -->
+        <a href="projects/zentaku.html" class="project-item" data-category="web personal">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="project-number">03</span>
+                <span class="status-badge status-completed">Completed</span>
+              </div>
+              <h3 class="project-name">ZENTAKU</h3>
+              <p class="project-desc">
+                Premium anime and manga tracking platform with dark-mode-first UI, anime streaming, manga chapter parsing, and glassmorphism design built on a self-sufficient backend API architecture.
+              </p>
+              <div class="project-meta-row">
+                <span class="project-meta-pill">2025</span>
+                <span>·</span>
+                <span class="project-meta-pill">Web Application</span>
+                <span>·</span>
+                <span class="project-meta-pill">Lead Developer</span>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">@consumet/extensions</span>
+                <span class="tech-tag">Jikan API</span>
+              </div>
+            </div>
+            <div class="project-link-action">
+              <span>View Case Study</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="mockup-preview-frame">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title">zentakuanime.vercel.app · Anime & Manga</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-accent-bar" style="background: #dc2626;"></div>
+                <div class="mockup-code-line w-80"></div>
+                <div class="mockup-code-line w-40"></div>
+                <div style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.725rem; color: var(--text-muted);">
+                  [Anime Streaming · Manga Vault · Self-Sufficient Backend API]
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 04: FLOODSAFE PH -->
+        <a href="projects/floodsafe-ph.html" class="project-item" data-category="web experiments">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="project-number">04</span>
+                <span class="status-badge status-dev">In Development</span>
+              </div>
+              <h3 class="project-name">FLOODSAFE PH</h3>
+              <p class="project-desc">
+                Civic technology web platform providing real-time river sensor tracking, flood hazard zone mapping, and early warning alerts for flood-prone Philippine communities.
+              </p>
+              <div class="project-meta-row">
+                <span class="project-meta-pill">2026</span>
+                <span>·</span>
+                <span class="project-meta-pill">Civic Tech / Web</span>
+                <span>·</span>
+                <span class="project-meta-pill">Lead Developer</span>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Leaflet / Maps</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">IoT Telemetry API</span>
+              </div>
+            </div>
+            <div class="project-link-action">
+              <span>View Case Study</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="mockup-preview-frame">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title">floodsafe.ph · River Water Level Map</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-accent-bar" style="background: #2563eb;"></div>
+                <div class="mockup-code-line w-60"></div>
+                <div class="mockup-code-line w-80"></div>
+                <div style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.725rem; color: var(--text-muted);">
+                  [Hydrological Telemetry · Safe Route Calculation · Offline PWA]
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 05: QUEST PLANNER -->
+        <a href="projects/quest-planner.html" class="project-item" data-category="web personal">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="project-number">05</span>
+                <span class="status-badge status-completed">Completed</span>
+              </div>
+              <h3 class="project-name">QUEST PLANNER</h3>
+              <p class="project-desc">
+                Gamified RPG-style task and study tracker with XP rewards, streak counters, avatar systems, and notification management — turning daily routines into quests.
+              </p>
+              <div class="project-meta-row">
+                <span class="project-meta-pill">2024</span>
+                <span>·</span>
+                <span class="project-meta-pill">Personal Web App</span>
+                <span>·</span>
+                <span class="project-meta-pill">Lead Developer</span>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+            </div>
+            <div class="project-link-action">
+              <span>View Case Study</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <div class="mockup-preview-frame">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-title">quest-planner · Daily Quests</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-accent-bar" style="background: #7c3aed;"></div>
+                <div class="mockup-code-line w-80"></div>
+                <div class="mockup-code-line w-60"></div>
+                <div style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.725rem; color: var(--text-muted);">
+                  [RPG Task XP · Streak System · Avatar & Inventory]
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 06: QCU MERCHMART & ADMIN -->
+        <a href="projects/qcu-merchmart.html" class="project-item" data-category="web academic">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="project-number">06</span>
+                <span class="status-badge status-completed">Completed</span>
+              </div>
+              <h3 class="project-name">QCU MERCHMART & ADMIN</h3>
+              <p class="project-desc">
+                E-Commerce cooperative web store and comprehensive administrative dashboard for university merchandise, school uniforms, and student pre-orders.
+              </p>
+              <div class="project-meta-row">
+                <span class="project-meta-pill">2024</span>
+                <span>·</span>
+                <span class="project-meta-pill">Academic Project</span>
+                <span>·</span>
+                <span class="project-meta-pill">Lead Developer</span>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Admin Panel</span>
+              </div>
+            </div>
+            <div class="project-link-action">
+              <span>View Case Study & Screenshots</span>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="project-preview">
+            <img src="assets/images/Screenshot 2024-12-27 034929.png" alt="QCU MerchMart Storefront Screenshot" loading="lazy">
+          </div>
+        </a>
+
+        <!-- 07: BREWHAVEN COFFEE POS & STORE -->
+        <div class="project-item" data-category="web academic">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="project-number">07</span>
+                <span class="status-badge status-completed">Completed</span>
+              </div>
+              <h3 class="project-name">BREWHAVEN COFFEE POS</h3>
+              <p class="project-desc">
+                Point-of-sale desktop application paired with an online coffee storefront website for beverage ordering, inventory deductions, and receipt printing.
+              </p>
+              <div class="project-meta-row">
+                <span class="project-meta-pill">2024</span>
+                <span>·</span>
+                <span class="project-meta-pill">Academic / POS</span>
+                <span>·</span>
+                <span class="project-meta-pill">Lead Developer</span>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">Java Swing</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+              <a href="https://github.com/Tamakiqt/POS-HAVENNN" target="_blank" class="project-link-action">Java POS Repo ↗</a>
+              <a href="https://github.com/Tamakiqt/BrewHaven" target="_blank" class="project-link-action">Web Store Repo ↗</a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <img src="assets/images/Screenshot 2024-12-27 035456.png" alt="BrewHaven Website Screenshot" loading="lazy">
+          </div>
         </div>
-    </footer>
-    
-    <script src="src/js/script.js" defer></script>
-    <script src="src/js/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- 08: FLAPPYBIRD & SECURITY TOOLS -->
+        <div class="project-item" data-category="experiments personal">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="project-number">08</span>
+                <span class="status-badge status-archived">Archived / Learning</span>
+              </div>
+              <h3 class="project-name">FLAPPYBIRD & SECURITY EXPERIMENTS</h3>
+              <p class="project-desc">
+                Early programming exploration into game loops, physics collision engines in Java Swing, and keystroke event listening experiments in Python for educational security analysis.
+              </p>
+              <div class="project-meta-row">
+                <span class="project-meta-pill">2023–2024</span>
+                <span>·</span>
+                <span class="project-meta-pill">Experiments</span>
+                <span>·</span>
+                <span class="project-meta-pill">Lead Developer</span>
+              </div>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OOP Fundamentals</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+              <a href="https://github.com/Blanknetework/FlappyBIrd" target="_blank" class="project-link-action">FlappyBird Repo ↗</a>
+              <a href="https://github.com/Blanknetework/Keylogger" target="_blank" class="project-link-action">Python Script Repo ↗</a>
+            </div>
+          </div>
+          <div class="project-preview">
+            <img src="assets/images/Screenshot 2024-12-27 035328.png" alt="FlappyBird Game Preview" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Development Journey Section -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Progression</span>
+        <h2 class="section-title">My Journey</h2>
+        <p class="section-subtitle">
+          How I've grown from learning basic programming syntax to architecting full-stack web systems.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- 2026 -->
+        <div class="timeline-entry current">
+          <div class="timeline-marker"></div>
+          <div class="timeline-year">2026 — Present</div>
+          <h3 class="timeline-heading">4th Year BSIT & Full-Stack Systems</h3>
+          <p class="timeline-desc">
+            Successfully developed and delivered <strong>SmartBarangay</strong> (an integrated barangay management and service system in Next.js and Firebase) and currently developing civic tech platforms (<strong>FloodSafe PH</strong>). Preparing for OJT / software developer internship opportunities while leveling up on modern cloud deployment, database query optimization, and UI/UX design systems.
+          </p>
+          <div class="timeline-highlights">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Firebase Firestore</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">OJT Preparation</span>
+          </div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-year">2025</div>
+          <h3 class="timeline-heading">Building Full-Stack Systems & Multimedia Platforms</h3>
+          <p class="timeline-desc">
+            Expanded into Next.js, real-time networking, and mobile development. Built <strong>Zentaku</strong> — a premium anime & manga tracking platform using Next.js and custom scraping APIs — and prototyped <strong>ExamGuard</strong> to explore Flutter, Firebase, and mobile security APIs for academic integrity monitoring.
+          </p>
+          <div class="timeline-highlights">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Flutter / Dart</span>
+            <span class="tech-tag">WebSockets</span>
+            <span class="tech-tag">Relational Database Design</span>
+          </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-year">2024</div>
+          <h3 class="timeline-heading">First Complete Web & Desktop Applications</h3>
+          <p class="timeline-desc">
+            Transitioned from small scripts to end-to-end applications. Developed the <strong>QCU MerchMart</strong> e-commerce store with an administrative CRUD dashboard in PHP/MySQL, created the <strong>BrewHaven</strong> Java POS system, and built the <strong>Quest Planner</strong> personal habit app in JavaScript.
+          </p>
+          <div class="timeline-highlights">
+            <span class="tech-tag">PHP / MySQL</span>
+            <span class="tech-tag">Vanilla JavaScript</span>
+            <span class="tech-tag">Java GUI (Swing)</span>
+            <span class="tech-tag">Git & GitHub</span>
+          </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-year">2023</div>
+          <h3 class="timeline-heading">Started BS Information Technology at QCU</h3>
+          <p class="timeline-desc">
+            Began my formal computer science and IT education at Quezon City University. Focused heavily on algorithmic problem solving, Object-Oriented Programming (Java), Data Structures, database fundamentals (SQL), and web markup (HTML/CSS).
+          </p>
+          <div class="timeline-highlights">
+            <span class="tech-tag">Java OOP</span>
+            <span class="tech-tag">Data Structures</span>
+            <span class="tech-tag">HTML & CSS</span>
+            <span class="tech-tag">SQL Basics</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Adam Nuevo</strong>, a 4th-year Bachelor of Science in Information Technology (BSIT) student based in Quezon City, Philippines.
+          </p>
+          <p>
+            My journey into software development isn't based on corporate claims—most of what I understand has come directly from writing code, breaking things, reading documentation, and working through errors until a system works reliably.
+          </p>
+          <p>
+            <strong>What I enjoy:</strong> I find satisfaction in designing clean, readable user interfaces and connecting them to well-structured databases and backends. I prefer code that is straightforward, maintainable, and solves real day-to-day problems over unnecessary complexity.
+          </p>
+          <p>
+            <strong>How I learn:</strong> I learn best by building complete projects from start to finish. When I want to understand a technology (whether it's Next.js, Laravel, or relational SQL indexing), I build an actual application around it.
+          </p>
+          <p>
+            <strong>Current Goal:</strong> I am actively seeking an <strong>OJT / Internship opportunity</strong> where I can contribute to real-world codebases, learn alongside experienced engineering teams, and continue growing into a solid software developer.
+          </p>
+        </div>
+
+        <aside class="about-sidebar">
+          <div class="about-photo-wrapper">
+            <img src="assets/images/me.png" alt="Adam Nuevo — Web & Software Developer" class="about-photo">
+          </div>
+          <h3 class="sidebar-title">Quick Facts</h3>
+          <ul class="about-facts">
+            <li class="fact-item">
+              <span class="fact-label">Education</span>
+              <span class="fact-val">4th Year BSIT · Quezon City University</span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-label">Location</span>
+              <span class="fact-val">Quezon City, Metro Manila, Philippines</span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-label">Focus Area</span>
+              <span class="fact-val">Web & Software Development</span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-label">Primary Languages</span>
+              <span class="fact-val">JavaScript, TypeScript, PHP, SQL, Java</span>
+            </li>
+            <li class="fact-item">
+              <span class="fact-label">Status</span>
+              <span class="fact-val" style="color: var(--accent);">Actively Available for OJT / Internship</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Now / Currently Section -->
+  <section class="section" id="now">
+    <div class="container">
+      <div class="now-box">
+        <div class="now-header">
+          <div class="now-badge">
+            <span class="status-dot"></span>
+            <span>CURRENT STATUS / NOW</span>
+          </div>
+          <div class="now-updated">Updated: 2026</div>
+        </div>
+
+        <div class="now-grid">
+          <!-- Currently Building -->
+          <div>
+            <div class="now-column-title">Active Projects</div>
+            <ul class="now-list">
+              <li class="now-list-item">
+                <span class="now-bullet">▪</span>
+                <span><strong>FloodSafe PH:</strong> Civic flood warning telemetry platform</span>
+              </li>
+              <li class="now-list-item">
+                <span class="now-bullet">▪</span>
+                <span><strong>SmartBarangay:</strong> Completed Subject Project</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Currently Learning -->
+          <div>
+            <div class="now-column-title">Currently Learning</div>
+            <ul class="now-list">
+              <li class="now-list-item">
+                <span class="now-bullet">▪</span>
+                <span>Next.js App Router & Server Actions</span>
+              </li>
+              <li class="now-list-item">
+                <span class="now-bullet">▪</span>
+                <span>PostgreSQL & Advanced Query Optimization</span>
+              </li>
+              <li class="now-list-item">
+                <span class="now-bullet">▪</span>
+                <span>Design Systems & Component Architecture</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Currently Looking For -->
+          <div>
+            <div class="now-column-title">Currently Seeking</div>
+            <ul class="now-list">
+              <li class="now-list-item">
+                <span class="now-bullet">▪</span>
+                <span><strong>OJT / Internship Roles:</strong> Web & Software Dev</span>
+              </li>
+              <li class="now-list-item">
+                <span class="now-bullet">▪</span>
+                <span>On-site (Metro Manila) or Remote</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section (Clean Typographic Matrix) -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Competencies</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">
+          Technologies and tools I have actively worked with across academic projects, personal builds, and coursework.
+        </p>
+      </div>
+
+      <div class="skills-matrix">
+        <!-- Frontend -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">Frontend</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span>HTML5</span></li>
+            <li class="skill-item"><span>CSS3 / Vanilla CSS</span></li>
+            <li class="skill-item"><span>JavaScript (ES6+)</span></li>
+            <li class="skill-item"><span>React</span></li>
+            <li class="skill-item"><span>Next.js</span></li>
+            <li class="skill-item"><span>Tailwind CSS</span></li>
+          </ul>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">Backend</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span>PHP (Vanilla)</span></li>
+            <li class="skill-item"><span>Node.js / Express</span></li>
+            <li class="skill-item"><span>Firebase Auth & Storage</span></li>
+            <li class="skill-item"><span>RESTful APIs</span></li>
+          </ul>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">Database</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span>MySQL</span></li>
+            <li class="skill-item"><span>PostgreSQL</span></li>
+            <li class="skill-item"><span>Oracle SQL</span></li>
+            <li class="skill-item"><span>Firebase Firestore</span></li>
+          </ul>
+        </div>
+
+        <!-- Mobile & Other -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">Mobile & Desktop</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span>Flutter</span></li>
+            <li class="skill-item"><span>Dart</span></li>
+            <li class="skill-item"><span>React Native</span></li>
+            <li class="skill-item"><span>Java (OOP & Swing)</span></li>
+            <li class="skill-item"><span>Python (Basics)</span></li>
+          </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">Tools & Workflow</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span>Git & GitHub</span></li>
+            <li class="skill-item"><span>VS Code</span></li>
+            <li class="skill-item"><span>Vercel / Netlify</span></li>
+            <li class="skill-item"><span>Figma</span></li>
+            <li class="skill-item"><span>Postman</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="contact-lead">LET'S BUILD SOMETHING.</h2>
+        <p class="contact-text">
+          Interested in discussing a project, offering an OJT / internship opportunity, or connecting? I'd be happy to hear from you.
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:adamnuevo28@gmail.com" class="btn btn-primary">Send Email ↗</a>
+          <button class="copy-email-btn">Copy Email: adamnuevo28@gmail.com</button>
+        </div>
+
+        <div class="social-links-row">
+          <a href="assets/cv/Adam_Nuevo_OJT_CV.pdf.pdf" download class="social-link">
+            Download CV (PDF) ↓
+          </a>
+          <a href="https://github.com/Blanknetework" target="_blank" rel="noopener noreferrer" class="social-link">
+            GitHub (Blanknetework) ↗
+          </a>
+          <a href="https://linkedin.com/in/adamnuevo73" target="_blank" rel="noopener noreferrer" class="social-link">
+            LinkedIn (adamnuevo73) ↗
+          </a>
+          <a href="mailto:adamnuevo28@gmail.com" class="social-link">
+            adamnuevo28@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">ADAM NUEVO</div>
+        <div class="footer-copy">4th Year BSIT Student · Web & Software Developer · Quezon City, Philippines</div>
+      </div>
+
+      <div class="footer-tech">
+        © 2026 Adam Nuevo. Built with HTML, CSS & Vanilla JavaScript.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Developer Easter Egg: Command Palette Modal -->
+  <div id="cmdPalette" class="cmd-palette-backdrop" role="dialog" aria-modal="true" aria-label="Command Navigator">
+    <div class="cmd-palette">
+      <div class="cmd-header">
+        <input type="text" id="cmdSearchInput" class="cmd-search-input" placeholder="Type a command or jump to section..." autocomplete="off" spellcheck="false">
+        <span class="cmd-esc-hint">ESC</span>
+      </div>
+
+      <ul class="cmd-results" id="cmdResultsList">
+        <li class="cmd-item" data-action="#projects">
+          <span>Go to Selected Projects</span>
+          <span class="cmd-item-key">P</span>
+        </li>
+        <li class="cmd-item" data-action="#journey">
+          <span>Go to Development Journey</span>
+          <span class="cmd-item-key">J</span>
+        </li>
+        <li class="cmd-item" data-action="#about">
+          <span>Go to About Me</span>
+          <span class="cmd-item-key">A</span>
+        </li>
+        <li class="cmd-item" data-action="#skills">
+          <span>Go to Skills Matrix</span>
+          <span class="cmd-item-key">S</span>
+        </li>
+        <li class="cmd-item" data-action="#now">
+          <span>Go to Now / Current Status</span>
+          <span class="cmd-item-key">N</span>
+        </li>
+        <li class="cmd-item" data-action="#contact">
+          <span>Go to Contact</span>
+          <span class="cmd-item-key">C</span>
+        </li>
+        <li class="cmd-item" data-action="cv">
+          <span>Download CV / Resume (PDF)</span>
+          <span class="cmd-item-key">V</span>
+        </li>
+        <li class="cmd-item" data-action="github">
+          <span>Open GitHub Profile (Blanknetework)</span>
+          <span class="cmd-item-key">G</span>
+        </li>
+        <li class="cmd-item" data-action="linkedin">
+          <span>Open LinkedIn Profile (adamnuevo73)</span>
+          <span class="cmd-item-key">L</span>
+        </li>
+        <li class="cmd-item" data-action="email">
+          <span>Copy Email to Clipboard</span>
+          <span class="cmd-item-key">E</span>
+        </li>
+        <li class="cmd-item" data-action="theme">
+          <span>Toggle Light / Dark Theme</span>
+          <span class="cmd-item-key">T</span>
+        </li>
+      </ul>
+
+      <div class="cmd-footer">
+        <span>Navigation Hotkeys: <kbd>P</kbd> Projects · <kbd>J</kbd> Journey · <kbd>A</kbd> About · <kbd>V</kbd> CV · <kbd>C</kbd> Contact · <kbd>G</kbd> GitHub</span>
+        <span>Adam Nuevo</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/js/script.js"></script>
 </body>
 </html>

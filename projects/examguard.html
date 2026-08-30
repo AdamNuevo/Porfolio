@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamGuard — Examination Proctoring & Integrity Monitoring | Adam Nuevo</title>
+  <meta name="description" content="Automated online examination monitoring and proctoring system built with React, WebRTC, and computer vision integration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/styles.css">
+  <link rel="stylesheet" href="../src/css/project-detail.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <span class="status-dot"></span>
+        Adam Nuevo
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+        <a href="../index.html#projects" class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.825rem;">← All Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container project-detail-header">
+    <a href="../index.html#projects" class="back-link">
+      <span>←</span> Back to Selected Work
+    </a>
+
+    <div class="detail-header-top">
+      <span class="detail-project-number">02</span>
+      <span class="status-badge status-completed">Completed Mobile App</span>
+    </div>
+
+    <h1 class="detail-title">EXAMGUARD</h1>
+    <p class="detail-tagline">Mobile examination monitoring and academic integrity proctoring application designed to ensure secure digital test-taking on mobile devices for remote and blended learning.</p>
+
+    <!-- Metadata Grid -->
+    <div class="detail-meta-grid">
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Timeline</span>
+        <span class="detail-meta-val">2025 · 3rd Year BSIT</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Category</span>
+        <span class="detail-meta-val">Mobile Application</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">My Role</span>
+        <span class="detail-meta-val">Lead Developer</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Primary Stack</span>
+        <span class="detail-meta-val">Flutter · Dart · WebRTC · Node.js</span>
+      </div>
+    </div>
+
+    <!-- Main Visual Mockup Showcase -->
+    <div class="detail-hero-visual">
+      <div class="detail-hero-mockup">
+        <div class="mockup-window-bar">
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-url">ExamGuard Mobile App · Live Proctoring</span>
+        </div>
+        <div class="detail-mockup-inner" style="background: linear-gradient(135deg, rgba(30,64,175,0.06), rgba(0,0,0,0.02));">
+          <div style="max-width: 620px; margin: 0 auto; text-align: center;">
+            <div style="display: inline-block; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); background: var(--bg-surface); padding: 0.3rem 0.8rem; border-radius: 4px; border: 1px solid var(--border-subtle); margin-bottom: 1rem;">
+              Mobile Kiosk Mode & Real-Time Face Verification
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">App Lock Detection, Camera Feed & Live Session Telemetry</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Monitors test-taker integrity on mobile devices with background app-switch prevention, camera verification, and real-time proctor alert streaming.
+            </p>
+            <div class="tech-tags" style="justify-content: center;">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">WebRTC</span>
+              <span class="tech-tag">Node.js / Express</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structured Technical Narrative -->
+    <div class="detail-content">
+      
+      <!-- ABOUT -->
+      <section class="content-block">
+        <h2 class="block-title">01 / About</h2>
+        <div class="block-body">
+          <p>
+            <strong>ExamGuard</strong> is a dedicated mobile examination proctoring application developed to address academic integrity during remote and hybrid testing. It turns student smartphones into secure testing environments that prevent multitasking, background app switching, and unauthorized assistance.
+          </p>
+        </div>
+      </section>
+
+      <!-- THE PROBLEM -->
+      <section class="content-block">
+        <h2 class="block-title">02 / The Problem</h2>
+        <div class="block-body">
+          <p>
+            When students take exams on personal mobile devices, maintaining fair testing conditions is notoriously difficult:
+          </p>
+          <ul>
+            <li><strong>Seamless app switching:</strong> Students can quickly jump between exam screens, messaging apps, and web browsers.</li>
+            <li><strong>Screen recording & split screen:</strong> Mobile OS features allow background screen capturing or concurrent app windows.</li>
+            <li><strong>Proctor visibility:</strong> Instructors lack real-time signals when a mobile student navigates away from the active assessment.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- THE SOLUTION -->
+      <section class="content-block">
+        <h2 class="block-title">03 / The Solution</h2>
+        <div class="block-body">
+          <p>
+            ExamGuard provides a mobile-locked testing environment:
+          </p>
+          <ul>
+            <li><strong>App Lifecycle & Focus Tracking:</strong> Detects whenever the application is paused, backgrounded, or split-screened, logging precise timestamps.</li>
+            <li><strong>Front Camera Stream:</strong> Periodic low-bandwidth WebRTC video frames for student presence and identity verification.</li>
+            <li><strong>Instant Proctor Alerts:</strong> Real-time socket events notify the instructor dashboard the second an anomaly or app switch occurs.</li>
+            <li><strong>Sandboxed Test Engine:</strong> Clean, distraction-free mobile question runner with offline answer queuing.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MY ROLE -->
+      <section class="content-block">
+        <h2 class="block-title">04 / My Role</h2>
+        <div class="block-body">
+          <p>
+            As the <strong>Lead Developer</strong> on this project:
+          </p>
+          <ul>
+            <li>Built the complete mobile application UI and test delivery flow in Flutter/Dart.</li>
+            <li>Implemented mobile lifecycle listeners (`WidgetsBindingObserver`) to capture background state transitions and screen blur events.</li>
+            <li>Engineered the WebSocket communication pipeline connecting mobile clients to the proctoring server.</li>
+            <li>Configured secure token authentication and test session state persistence.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY -->
+      <section class="content-block">
+        <h2 class="block-title">05 / Technology</h2>
+        <div class="block-body">
+          <div class="skills-matrix" style="grid-template-columns: 1fr 1fr;">
+            <div>
+              <span class="skill-category-title">Mobile Client</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> Flutter & Dart</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> App Lifecycle Telemetry</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> WebRTC (Camera Stream)</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Socket.io Mobile Client</li>
+              </ul>
+            </div>
+            <div>
+              <span class="skill-category-title">Backend & Server</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> Node.js & Express</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Socket.io Realtime Server</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> MongoDB / Database</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> JWT Authentication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGES -->
+      <section class="content-block">
+        <h2 class="block-title">06 / Challenges</h2>
+        <div class="block-body">
+          <div class="challenges-grid">
+            <div class="challenge-card">
+              <h4 class="challenge-title">1. Minimizing False Positives from System Notifications</h4>
+              <p class="challenge-text">
+                OS popups (e.g. anti-virus alerts or low-battery prompts) could inadvertently fire blur events. I implemented a grace debounce period and threshold-based scoring rather than immediate penalization.
+              </p>
+            </div>
+            <div class="challenge-card">
+              <h4 class="challenge-title">2. Maintaining Low Latency WebSocket Connections Across Multiple Concurrent Test Takers</h4>
+              <p class="challenge-text">
+                Batched telemetry heartbeat packets every 3 seconds to reduce socket congestion on the Express server while preserving high-precision event logs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT I LEARNED -->
+      <section class="content-block">
+        <h2 class="block-title">07 / What I Learned</h2>
+        <div class="block-body">
+          <p>
+            ExamGuard pushed me to think deeply about edge cases in client-side state, event lifecycles, and real-time networking. I gained significant experience with WebSockets, browser event APIs, and balancing security constraints with user privacy.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Action Bar -->
+    <div class="detail-action-bar">
+      <a href="https://github.com/Blanknetework" target="_blank" class="btn btn-primary">View on GitHub ↗</a>
+      <button id="shareProjectBtn" class="btn btn-secondary">Copy Project Link</button>
+      <a href="../index.html#contact" class="btn btn-secondary">Discuss This Project</a>
+    </div>
+
+    <!-- Pagination -->
+    <div class="project-nav-pagination">
+      <a href="smartbarangay.html" class="nav-pag-item prev">
+        <span class="nav-pag-label">← Previous Project</span>
+        <span class="nav-pag-title">SmartBarangay System</span>
+      </a>
+      <a href="zentaku.html" class="nav-pag-item next">
+        <span class="nav-pag-label">Next Project →</span>
+        <span class="nav-pag-title">Zentaku Housing Platform</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Adam Nuevo</div>
+        <div class="footer-copy">4th Year BSIT Student · Quezon City, Philippines</div>
+      </div>
+      <div class="social-links-row">
+        <a href="https://github.com/Blanknetework" target="_blank" class="social-link">GitHub</a>
+        <a href="https://linkedin.com/in/adamnuevo73" target="_blank" class="social-link">LinkedIn</a>
+        <a href="mailto:adamnuevo28@gmail.com" class="social-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/project.js"></script>
+</body>
+</html>

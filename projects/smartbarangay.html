@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBarangay — Integrated Barangay Management System | Adam Nuevo</title>
+  <meta name="description" content="Integrated Barangay Management and Service Information System built with Next.js, Firebase, and Tailwind CSS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/styles.css">
+  <link rel="stylesheet" href="../src/css/project-detail.css">
+</head>
+<body>
+
+  <!-- Minimal Sticky Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <span class="status-dot"></span>
+        Adam Nuevo
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+        <a href="../index.html#projects" class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.825rem;">← All Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container project-detail-header">
+    <a href="../index.html#projects" class="back-link">
+      <span>←</span> Back to Selected Work
+    </a>
+
+    <div class="detail-header-top">
+      <span class="detail-project-number">01</span>
+      <span class="status-badge status-completed">Completed Subject Project</span>
+    </div>
+
+    <h1 class="detail-title">SMARTBARANGAY</h1>
+    <p class="detail-tagline">Integrated Barangay Management and Service Information System designed for streamlined local governance, automated document issuance, and resident records.</p>
+
+    <!-- Metadata Grid -->
+    <div class="detail-meta-grid">
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Timeline</span>
+        <span class="detail-meta-val">2026 · 4th Year BSIT</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Category</span>
+        <span class="detail-meta-val">Academic / Subject Project</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">My Role</span>
+        <span class="detail-meta-val">Lead Developer</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Primary Stack</span>
+        <span class="detail-meta-val">Next.js · Firebase · Tailwind</span>
+      </div>
+    </div>
+
+    <!-- Main Visual Mockup Showcase -->
+    <div class="detail-hero-visual">
+      <div class="detail-hero-mockup">
+        <div class="mockup-window-bar">
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-url">smartbarangay.app/admin/dashboard</span>
+        </div>
+        <div class="detail-mockup-inner" style="background: linear-gradient(135deg, rgba(30,64,175,0.06), rgba(0,0,0,0.02));">
+          <div style="max-width: 620px; margin: 0 auto; text-align: center;">
+            <div style="display: inline-block; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); background: var(--bg-surface); padding: 0.3rem 0.8rem; border-radius: 4px; border: 1px solid var(--border-subtle); margin-bottom: 1rem;">
+              Barangay Information Architecture & Resident Registry
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Digital Certificate Issuance & Community Blotter Records</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Replaces paper logbooks and manual clearance processing with a role-based, real-time administrative platform for Philippine local government units.
+            </p>
+            <div class="tech-tags" style="justify-content: center;">
+              <span class="tech-tag">Next.js App Router</span>
+              <span class="tech-tag">Firebase Auth</span>
+              <span class="tech-tag">Firestore NoSQL</span>
+              <span class="tech-tag">Cloud Storage</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">PDF Generation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structured Technical Narrative -->
+    <div class="detail-content">
+      
+      <!-- ABOUT -->
+      <section class="content-block">
+        <h2 class="block-title">01 / About</h2>
+        <div class="block-body">
+          <p>
+            <strong>SmartBarangay</strong> is an integrated web-based management and community service portal built specifically to address administrative bottlenecks in Philippine barangay offices (the smallest local government unit in the country).
+          </p>
+          <p>
+            The system enables barangay officials to maintain accurate digital resident registries, generate and verify official documents (e.g., Barangay Clearance, Certificate of Indigency, Certificate of Residency), manage incident and blotter reports, and track community announcements with granular role-based security.
+          </p>
+        </div>
+      </section>
+
+      <!-- THE PROBLEM -->
+      <section class="content-block">
+        <h2 class="block-title">02 / The Problem</h2>
+        <div class="block-body">
+          <p>
+            Many local barangay centers still rely heavily on paper records, manual filing cabinets, and standalone spreadsheets. This creates several major challenges:
+          </p>
+          <ul>
+            <li><strong>Slow document turnaround:</strong> Residents often wait hours for manual clearance lookup and physical signature routing.</li>
+            <li><strong>Data redundancy and loss:</strong> Physical records risk damage, misplaced files, and duplicate resident entries across differing year registries.</li>
+            <li><strong>Disorganized incident tracking:</strong> Blotter reports and peace-and-order documentation lack indexed search and audit trails.</li>
+            <li><strong>No verification mechanism:</strong> Difficulty for external institutions to authenticate issued certificates against forgery.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- THE SOLUTION -->
+      <section class="content-block">
+        <h2 class="block-title">03 / The Solution</h2>
+        <div class="block-body">
+          <p>
+            SmartBarangay centralizes all community data onto a secure, cloud-backed system engineered for fast data retrieval and simple administrative workflows:
+          </p>
+          <ul>
+            <li><strong>Central Resident Database:</strong> Complete demographic profile with family household grouping, senior citizen tagging, 4Ps status, and search-indexed IDs.</li>
+            <li><strong>Automated Document Engine:</strong> One-click PDF generation with dynamic QR code verification for instant tamper-proof authentication.</li>
+            <li><strong>Secure Blotter & Case Module:</strong> Timestamped incident recording with confidential access permissions restricted to authorized officials.</li>
+            <li><strong>Resident Self-Service Requests:</strong> Optional citizen interface for requesting certificates online and monitoring approval progress.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MY ROLE -->
+      <section class="content-block">
+        <h2 class="block-title">04 / My Role</h2>
+        <div class="block-body">
+          <p>
+            As the <strong>Lead Developer</strong> on this subject project, my responsibilities encompass:
+          </p>
+          <ul>
+            <li>Architecting the frontend user interface and component architecture using Next.js and Tailwind CSS.</li>
+            <li>Designing the NoSQL Firestore database schema for resident records, household hierarchies, and audit logs.</li>
+            <li>Implementing Firebase Authentication with role-based access control (Admin, Desk Officer, Kagawad, Resident).</li>
+            <li>Building client-side printable document generation and QR validation logic.</li>
+            <li>Collaborating with team members to conduct requirement gathering and usability testing.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY -->
+      <section class="content-block">
+        <h2 class="block-title">05 / Technology</h2>
+        <div class="block-body">
+          <div class="skills-matrix" style="grid-template-columns: 1fr 1fr;">
+            <div>
+              <span class="skill-category-title">Frontend</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> Next.js (React Framework)</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Tailwind CSS</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Lucide Icons</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> jsPDF / HTML Canvas</li>
+              </ul>
+            </div>
+            <div>
+              <span class="skill-category-title">Backend & Cloud</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> Firebase Firestore (NoSQL)</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Firebase Authentication</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Firebase Cloud Storage</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Vercel Cloud Hosting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGES -->
+      <section class="content-block">
+        <h2 class="block-title">06 / Challenges</h2>
+        <div class="block-body">
+          <div class="challenges-grid">
+            <div class="challenge-card">
+              <h4 class="challenge-title">1. Handling Complex Household & Family Hierarchies in NoSQL</h4>
+              <p class="challenge-text">
+                Modeling relationships where individuals belong to dynamic households without creating massive duplicate reads required structuring normalized sub-collections and index mappings in Firestore.
+              </p>
+            </div>
+            <div class="challenge-card">
+              <h4 class="challenge-title">2. Offline Accessibility & PDF Formatting Consistency</h4>
+              <p class="challenge-text">
+                Ensuring that printed clearances match exact physical paper standard dimensions regardless of browser print drivers required fine-tuning CSS print media stylesheets and client-side vector canvas renders.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT I LEARNED -->
+      <section class="content-block">
+        <h2 class="block-title">07 / What I Learned</h2>
+        <div class="block-body">
+          <p>
+            Building SmartBarangay taught me how to translate real-world bureaucratic workflows into clean, intuitive software interfaces. I deepened my knowledge in Next.js Server Components, Firestore security rules, client-side document rendering, and architecting robust role-based authorization in cloud environments.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Action Bar -->
+    <div class="detail-action-bar">
+      <a href="https://github.com/Blanknetework" target="_blank" class="btn btn-primary">View on GitHub ↗</a>
+      <button id="shareProjectBtn" class="btn btn-secondary">Copy Project Link</button>
+      <a href="../index.html#contact" class="btn btn-secondary">Discuss This Project</a>
+    </div>
+
+    <!-- Pagination -->
+    <div class="project-nav-pagination">
+      <a href="qcu-merchmart.html" class="nav-pag-item prev">
+        <span class="nav-pag-label">← Previous Project</span>
+        <span class="nav-pag-title">QCU MerchMart & Admin</span>
+      </a>
+      <a href="examguard.html" class="nav-pag-item next">
+        <span class="nav-pag-label">Next Project →</span>
+        <span class="nav-pag-title">ExamGuard Monitoring</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Adam Nuevo</div>
+        <div class="footer-copy">4th Year BSIT Student · Quezon City, Philippines</div>
+      </div>
+      <div class="social-links-row">
+        <a href="https://github.com/Blanknetework" target="_blank" class="social-link">GitHub</a>
+        <a href="https://linkedin.com/in/adamnuevo73" target="_blank" class="social-link">LinkedIn</a>
+        <a href="mailto:adamnuevo28@gmail.com" class="social-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/project.js"></script>
+</body>
+</html>

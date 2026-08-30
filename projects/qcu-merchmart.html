@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCU MerchMart & Admin Dashboard — Cooperative E-Commerce | Adam Nuevo</title>
+  <meta name="description"
+    content="E-Commerce cooperative web platform and administrative dashboard for Quezon City University built with PHP, MySQL, and JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/styles.css">
+  <link rel="stylesheet" href="../src/css/project-detail.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <span class="status-dot"></span>
+        Adam Nuevo
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+        <a href="../index.html#projects" class="btn btn-secondary"
+          style="padding: 0.4rem 0.9rem; font-size: 0.825rem;">← All Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container project-detail-header">
+    <a href="../index.html#projects" class="back-link">
+      <span>←</span> Back to Selected Work
+    </a>
+
+    <div class="detail-header-top">
+      <span class="detail-project-number">06</span>
+      <span class="status-badge status-completed">Completed</span>
+    </div>
+
+    <h1 class="detail-title">QCU MERCHMART & ADMIN</h1>
+    <p class="detail-tagline">Integrated e-commerce cooperative marketplace and real-time administrative back-office
+      system for university merchandise, uniforms, books, and student pre-orders.</p>
+
+    <!-- Metadata Grid -->
+    <div class="detail-meta-grid">
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Timeline</span>
+        <span class="detail-meta-val">2024 · 2nd/3rd Year BSIT</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Category</span>
+        <span class="detail-meta-val">Academic / Web System</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">My Role</span>
+        <span class="detail-meta-val">Lead Developer</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Primary Stack</span>
+        <span class="detail-meta-val">PHP · MySQL · JavaScript · CSS3</span>
+      </div>
+    </div>
+
+    <!-- Main Visual Showcase (Using real screenshot) -->
+    <div class="detail-hero-visual">
+      <img src="../assets/images/Screenshot 2024-12-27 034929.png" alt="QCU MerchMart Storefront Interface">
+    </div>
+
+    <!-- Structured Technical Narrative -->
+    <div class="detail-content">
+
+      <!-- ABOUT -->
+      <section class="content-block">
+        <h2 class="block-title">01 / About</h2>
+        <div class="block-body">
+          <p>
+            <strong>QCU MerchMart</strong> is an academic e-commerce web platform created for Quezon City University's
+            cooperative store. It enables students and faculty to browse university merchandise, pre-order uniforms and
+            school supplies, track order fulfillment statuses, and manage inventory via a dedicated administrative
+            dashboard.
+          </p>
+        </div>
+      </section>
+
+      <!-- THE PROBLEM -->
+      <section class="content-block">
+        <h2 class="block-title">02 / The Problem</h2>
+        <div class="block-body">
+          <p>
+            At the start of every academic semester, the physical campus cooperative experiences massive queues and
+            stock discrepancies:
+          </p>
+          <ul>
+            <li><strong>Manual order handling:</strong> Long physical waitlines for size inquiries and item availability
+              checks.</li>
+            <li><strong>Inventory blindspots:</strong> Cashiers lacked automated low-stock warnings, leading to
+              unfulfilled orders.</li>
+            <li><strong>Paper receipts:</strong> Difficulty tracking revenue summaries and order settlement records.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- THE SOLUTION -->
+      <section class="content-block">
+        <h2 class="block-title">03 / The Solution</h2>
+        <div class="block-body">
+          <p>
+            We built a two-sided web portal:
+          </p>
+          <ul>
+            <li><strong>Student Storefront:</strong> Interactive product catalog with category filters, shopping cart,
+              checkout workflow, and order receipt printing.</li>
+            <li><strong>Admin Back-Office:</strong> Comprehensive control panel for stock adjustment, order status
+              updates (Pending, Processing, Claimed, Cancelled), sales analytics, and user role management.</li>
+            <li><strong>Relational MySQL Schema:</strong> ACID-compliant transactions to prevent inventory overselling
+              during simultaneous checkouts.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MY ROLE -->
+      <section class="content-block">
+        <h2 class="block-title">04 / My Role</h2>
+        <div class="block-body">
+          <p>
+            As the <strong>Lead Developer</strong>:
+          </p>
+          <ul>
+            <li>Developed the administrative control center including table sorting, search filters, and modal-based
+              CRUD operations.</li>
+            <li>Constructed PHP session management, password hashing (<code>bcrypt</code>), and secure database querying
+              using prepared PDO statements.</li>
+            <li>Designed the relational database tables for users, products, categories, orders, and order items.</li>
+            <li>Integrated client-side cart logic in vanilla JavaScript for instant price recalculations.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY -->
+      <section class="content-block">
+        <h2 class="block-title">05 / Technology</h2>
+        <div class="block-body">
+          <div class="skills-matrix" style="grid-template-columns: 1fr 1fr;">
+            <div>
+              <span class="skill-category-title">Backend & Database</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> PHP (Native / PDO)</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> MySQL Database</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Session Authentication</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Apache Server (XAMPP)</li>
+              </ul>
+            </div>
+            <div>
+              <span class="skill-category-title">Frontend & UI</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> HTML5 & CSS3</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> JavaScript (ES6)</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Font Awesome Icons</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Responsive Flexbox / Grid</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="content-block">
+        <h2 class="block-title">06 / Gallery</h2>
+        <div class="block-body">
+          <div class="detail-gallery-grid">
+            <div class="gallery-card">
+              <img src="../assets/images/Screenshot 2024-12-27 035042.png" alt="Admin Dashboard Overview">
+              <div class="gallery-caption">Admin Back-Office Dashboard & Order Management</div>
+            </div>
+            <div class="gallery-card">
+              <img src="../assets/images/Screenshot 2024-12-27 034929.png" alt="Student Storefront">
+              <div class="gallery-caption">Student Storefront Catalog & Category Navigation</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT I LEARNED -->
+      <section class="content-block">
+        <h2 class="block-title">07 / What I Learned</h2>
+        <div class="block-body">
+          <p>
+            QCU MerchMart was one of my foundational full-stack milestones. It gave me deep, hands-on experience in
+            relational database constraints, securing forms against SQL injection and XSS, and designing end-to-end
+            purchasing and inventory flows.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Action Bar -->
+    <div class="detail-action-bar">
+      <a href="https://github.com/Tamakiqt/QCU-MERCHMART" target="_blank" class="btn btn-primary">View Storefront Source
+        ↗</a>
+      <a href="https://github.com/Tamakiqt/QCU-MERCHMART/tree/master/admin-dashboard" target="_blank"
+        class="btn btn-secondary">View Admin Source ↗</a>
+      <button id="shareProjectBtn" class="btn btn-secondary">Copy Project Link</button>
+    </div>
+
+    <!-- Pagination -->
+    <div class="project-nav-pagination">
+      <a href="quest-planner.html" class="nav-pag-item prev">
+        <span class="nav-pag-label">← Previous Project</span>
+        <span class="nav-pag-title">Quest Planner</span>
+      </a>
+      <a href="smartbarangay.html" class="nav-pag-item next">
+        <span class="nav-pag-label">Next Project →</span>
+        <span class="nav-pag-title">SmartBarangay System</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Adam Nuevo</div>
+        <div class="footer-copy">4th Year BSIT Student · Quezon City, Philippines</div>
+      </div>
+      <div class="social-links-row">
+        <a href="https://github.com/Blanknetework" target="_blank" class="social-link">GitHub</a>
+        <a href="https://linkedin.com/in/adamnuevo73" target="_blank" class="social-link">LinkedIn</a>
+        <a href="mailto:adamnuevo28@gmail.com" class="social-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/project.js"></script>
+</body>
+
+</html>

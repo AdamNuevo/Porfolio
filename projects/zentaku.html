@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zentaku — Anime & Manga Tracking Platform | Adam Nuevo</title>
+  <meta name="description" content="Premium anime and manga tracking platform built with Next.js, Tailwind CSS, and custom scraping APIs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/styles.css">
+  <link rel="stylesheet" href="../src/css/project-detail.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand">
+        <span class="status-dot"></span>
+        Adam Nuevo
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span class="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+        <a href="../index.html#projects" class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.825rem;">← All Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container project-detail-header">
+    <a href="../index.html#projects" class="back-link">
+      <span>←</span> Back to Selected Work
+    </a>
+
+    <div class="detail-header-top">
+      <span class="detail-project-number">03</span>
+      <span class="status-badge status-completed">Completed</span>
+    </div>
+
+    <h1 class="detail-title">ZENTAKU</h1>
+    <p class="detail-tagline">Premium anime and manga tracking platform — stream anime, read manga, one place. Built with a self-sufficient backend API architecture and dark-mode-first glassmorphism design.</p>
+
+    <!-- Metadata Grid -->
+    <div class="detail-meta-grid">
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Timeline</span>
+        <span class="detail-meta-val">2025 · 3rd Year BSIT</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Category</span>
+        <span class="detail-meta-val">Web Application</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">My Role</span>
+        <span class="detail-meta-val">Lead Developer</span>
+      </div>
+      <div class="detail-meta-item">
+        <span class="detail-meta-label">Primary Stack</span>
+        <span class="detail-meta-val">Next.js · Tailwind CSS · Jikan API</span>
+      </div>
+    </div>
+
+    <!-- Main Visual Mockup Showcase -->
+    <div class="detail-hero-visual">
+      <div class="detail-hero-mockup">
+        <div class="mockup-window-bar">
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-dot"></span>
+          <span class="mockup-window-url">zentakuanime.vercel.app</span>
+        </div>
+        <div class="detail-mockup-inner" style="background: linear-gradient(135deg, rgba(220,38,38,0.08), rgba(0,0,0,0.02));">
+          <div style="max-width: 620px; margin: 0 auto; text-align: center;">
+            <div style="display: inline-block; font-family: var(--font-mono); font-size: 0.75rem; color: #dc2626; background: var(--bg-surface); padding: 0.3rem 0.8rem; border-radius: 4px; border: 1px solid var(--border-subtle); margin-bottom: 1rem;">
+              Self-Sufficient Backend · No DMCA Risk
+            </div>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Stream Anime. Read Manga. One Place.</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              A premium, dark-mode-first web application with glassmorphism UI, real-time streaming via AnimeKai provider, and comprehensive manga tracking through Jikan & MangaDex.
+            </p>
+            <div class="tech-tags" style="justify-content: center;">
+              <span class="tech-tag">Next.js App Router</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">@consumet/extensions</span>
+              <span class="tech-tag">Jikan API</span>
+              <span class="tech-tag">MangaDex</span>
+              <span class="tech-tag">TypeScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structured Technical Narrative -->
+    <div class="detail-content">
+      
+      <!-- ABOUT -->
+      <section class="content-block">
+        <h2 class="block-title">01 / About</h2>
+        <div class="block-body">
+          <p>
+            <strong>Zentaku</strong> is a highly polished, dark-mode-first anime and manga tracking platform that bridges the gap between discovering new manga and streaming your favorite anime — all in one place.
+          </p>
+          <p>
+            Built entirely without reliance on third-party public proxy APIs, Zentaku uses a native scraping architecture to provide fast, accurate data while avoiding DMCA takedowns.
+          </p>
+        </div>
+      </section>
+
+      <!-- THE PROBLEM -->
+      <section class="content-block">
+        <h2 class="block-title">02 / The Problem</h2>
+        <div class="block-body">
+          <p>
+            Anime and manga fans often bounce between multiple fragmented platforms — one for tracking, one for streaming, another for reading. Most aggregator sites:
+          </p>
+          <ul>
+            <li><strong>Rely on unstable public proxies:</strong> Many sites break frequently or go down due to DMCA enforcement on shared proxy configurations.</li>
+            <li><strong>Have poor UI/UX:</strong> Crowded with ads, slow load times, and no cohesive design language.</li>
+            <li><strong>No unified experience:</strong> Separate services for anime tracking, streaming, and manga reading with no cross-linking.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- THE SOLUTION -->
+      <section class="content-block">
+        <h2 class="block-title">03 / The Solution</h2>
+        <div class="block-body">
+          <p>
+            Zentaku provides a unified, premium-grade platform:
+          </p>
+          <ul>
+            <li><strong>Anime Streaming:</strong> Powered securely via <code>@consumet/extensions</code> (AnimeKai provider), utilizing a completely self-sufficient backend API route system — no <code>.env</code> proxy configurations required.</li>
+            <li><strong>Manga Vault:</strong> Comprehensive manga tracking and chapter parsing utilizing the Jikan (MyAnimeList) API and MangaDex.</li>
+            <li><strong>Premium UI:</strong> Glassmorphism components, smooth micro-animations, pitch-black base with deep red accents, and fully adaptive layouts from mobile to ultra-wide.</li>
+            <li><strong>Lightning Fast Rendering:</strong> Leverages Next.js 15 App Router, caching, and Server Components for fast page loads.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MY ROLE -->
+      <section class="content-block">
+        <h2 class="block-title">04 / My Role</h2>
+        <div class="block-body">
+          <p>
+            As the <strong>Lead Developer</strong>, I was responsible for:
+          </p>
+          <ul>
+            <li>Architecting the Next.js App Router structure and self-sufficient backend API routes.</li>
+            <li>Integrating <code>@consumet/extensions</code> for anime streaming without relying on public proxies.</li>
+            <li>Implementing Jikan API and MangaDex integration for the Manga Vault module.</li>
+            <li>Designing the entire UI system — glassmorphism components, dark-mode tokens, and adaptive layouts.</li>
+            <li>Deploying the platform to Vercel with production-level caching strategies.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY -->
+      <section class="content-block">
+        <h2 class="block-title">05 / Technology</h2>
+        <div class="block-body">
+          <div class="skills-matrix" style="grid-template-columns: 1fr 1fr;">
+            <div>
+              <span class="skill-category-title">Framework & Backend</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> Next.js 15 (App Router)</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> TypeScript</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> @consumet/extensions</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Jikan API / MangaDex</li>
+              </ul>
+            </div>
+            <div>
+              <span class="skill-category-title">UI & Deployment</span>
+              <ul class="now-list">
+                <li class="now-list-item"><span class="now-bullet">▪</span> Tailwind CSS</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Glassmorphism Design</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Micro-animations</li>
+                <li class="now-list-item"><span class="now-bullet">▪</span> Vercel Hosting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHALLENGES -->
+      <section class="content-block">
+        <h2 class="block-title">06 / Challenges</h2>
+        <div class="block-body">
+          <div class="challenges-grid">
+            <div class="challenge-card">
+              <h4 class="challenge-title">1. DMCA-Safe Streaming Architecture</h4>
+              <p class="challenge-text">
+                Building a compliant streaming solution required using a self-sufficient backend API route system via <code>@consumet/extensions</code> instead of public proxies, ensuring the platform avoids third-party DMCA exposure.
+              </p>
+            </div>
+            <div class="challenge-card">
+              <h4 class="challenge-title">2. Adaptive Layout Across Devices</h4>
+              <p class="challenge-text">
+                Designed layouts that scroll horizontally on tablets, stack intelligently on mobile, and utilize powerful CSS grid rules on ultra-wide monitors — all without sacrificing the premium aesthetic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT I LEARNED -->
+      <section class="content-block">
+        <h2 class="block-title">07 / What I Learned</h2>
+        <div class="block-body">
+          <p>
+            Zentaku pushed me deeper into Next.js 15's App Router, Server Components, and caching strategies. It also taught me how to design a premium-feel dark UI from scratch using Tailwind — and how to think about legal compliance in API-driven media platforms.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Action Bar -->
+    <div class="detail-action-bar">
+      <a href="https://github.com/Blanknetework/Zentaku" target="_blank" class="btn btn-primary">View on GitHub ↗</a>
+      <a href="https://zentakuanime.vercel.app" target="_blank" class="btn btn-secondary">Live Site ↗</a>
+      <button id="shareProjectBtn" class="btn btn-secondary">Copy Project Link</button>
+    </div>
+
+    <!-- Pagination -->
+    <div class="project-nav-pagination">
+      <a href="examguard.html" class="nav-pag-item prev">
+        <span class="nav-pag-label">← Previous Project</span>
+        <span class="nav-pag-title">ExamGuard Monitoring</span>
+      </a>
+      <a href="floodsafe-ph.html" class="nav-pag-item next">
+        <span class="nav-pag-label">Next Project →</span>
+        <span class="nav-pag-title">FloodSafe PH</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Adam Nuevo</div>
+        <div class="footer-copy">4th Year BSIT Student · Quezon City, Philippines</div>
+      </div>
+      <div class="social-links-row">
+        <a href="https://github.com/Blanknetework" target="_blank" class="social-link">GitHub</a>
+        <a href="https://linkedin.com/in/adamnuevo73" target="_blank" class="social-link">LinkedIn</a>
+        <a href="mailto:adamnuevo28@gmail.com" class="social-link">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/project.js"></script>
+</body>
+</html>

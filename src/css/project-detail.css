@@ -1,0 +1,352 @@
+.project-detail-header {
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+  padding-bottom: 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--text-primary);
+  transform: translateX(-4px);
+}
+
+.detail-header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.detail-project-number {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.detail-title {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.03em;
+}
+
+.detail-tagline {
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Metadata Bar */
+.detail-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 3rem;
+}
+
+.detail-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detail-meta-label {
+  font-family: var(--font-mono);
+  font-size: 0.725rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-meta-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Featured Visual */
+.detail-hero-visual {
+  width: 100%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 3.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.detail-hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.detail-hero-mockup {
+  padding: 2.5rem;
+  background: var(--bg-surface);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mockup-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.mockup-window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--border-subtle);
+}
+
+.mockup-window-url {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background-color: var(--bg-subtle);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.detail-mockup-inner {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 2rem;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Content Sections */
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.content-block {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.block-title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  position: sticky;
+  top: 90px;
+}
+
+.block-body {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.block-body p strong {
+  color: var(--text-primary);
+}
+
+.block-body ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 0;
+}
+
+.block-body li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.block-body li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Challenges */
+.challenges-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.challenge-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.challenge-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.challenge-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Gallery */
+.detail-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-caption {
+  padding: 0.85rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Action Bar */
+.detail-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 4rem;
+}
+
+/* Project Pagination */
+.project-nav-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 4rem 0;
+}
+
+.nav-pag-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-decoration: none;
+}
+
+.nav-pag-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.nav-pag-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color var(--transition-fast);
+}
+
+.nav-pag-item:hover .nav-pag-title {
+  color: var(--accent);
+}
+
+.nav-pag-item.next {
+  text-align: right;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .content-block {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .block-title {
+    position: static;
+  }
+
+  .detail-hero-mockup {
+    padding: 1.25rem;
+  }
+
+  .challenges-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-nav-pagination {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .nav-pag-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-action-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .detail-action-bar .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .detail-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
